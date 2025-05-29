@@ -29,6 +29,7 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         ndkVersion = "27.0.12077973"
+        resValue("string", "google_maps_key", project.properties["GOOGLE_MAPS_API_KEY"] as String)
     }
 
     buildTypes {
